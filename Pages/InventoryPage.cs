@@ -1,6 +1,4 @@
-﻿using FluentAssertions;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium;
 
 namespace DemoLiteCart.Tests.Pages
 {
