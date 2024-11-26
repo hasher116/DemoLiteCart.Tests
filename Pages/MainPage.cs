@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using DemoLiteCart.Tests.Bases;
-using OpenQA.Selenium.DevTools.V112.Page;
+﻿using OpenQA.Selenium;
 
 namespace DemoLiteCart.Tests.Pages
 {

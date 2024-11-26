@@ -1,6 +1,5 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using static System.Net.WebRequestMethods;
 
 namespace DemoLiteCart.Tests.Bases
 {
@@ -11,18 +10,19 @@ namespace DemoLiteCart.Tests.Bases
         [SetUp]
         public void Setup()
         {
-            ChromeOptions options = new ChromeOptions();
-            options.AddArgument("--headless");
+            var options = new ChromeOptions();
+            // options.AddArgument("--headless");
+            //options.AddArgument("--start-maximized");
             driver = new ChromeDriver(options);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
             driver.Url = "https://www.saucedemo.com/";
-            driver.Manage().Window.Maximize();
+            Console.WriteLine($"{driver.Manage().Window.Size.Width}x{driver.Manage().Window.Size.Height}");
         }
 
         [TearDown]
         public void TearDown() 
         {
-            driver.Quit();
+            driver.Dispose();
         }
     }
 }

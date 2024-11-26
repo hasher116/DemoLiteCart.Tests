@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DemoLiteCart.Tests.Bases;
+﻿using DemoLiteCart.Tests.Bases;
 using DemoLiteCart.Tests.Pages;
+using FluentAssertions;
 
 namespace DemoLiteCart.Tests.Tests
 {
@@ -16,14 +12,13 @@ namespace DemoLiteCart.Tests.Tests
         {
             string expectedText = "Products";
 
-            MainPage mainPage = new MainPage(driver);
+            var mainPage = new MainPage(driver);
             mainPage.AddLoginAndPassword(username, password)
                 .CheckLogin();
 
-            InventoryPage inventoryPage = new InventoryPage(driver);
-            inventoryPage.CheckLocator();
+            var inventoryPage = new InventoryPage(driver);
 
-            Assert.That(inventoryPage.CheckLocator(), Is.EqualTo(expectedText));
+            inventoryPage.CheckLocator().Should().BeEquivalentTo(expectedText);
         }
     }
 }
