@@ -6,8 +6,8 @@ namespace DemoLiteCart.Tests.Pages
 {
     public class InventoryPage 
     {
-        private IWebDriver driver;
-        private By locatorProducts = By.XPath("//span[@class = 'title']");
+        private readonly IWebDriver driver;
+        private readonly By locatorProducts = By.XPath("//span[@class = 'title']");
 
         public InventoryPage (IWebDriver driver)
         {

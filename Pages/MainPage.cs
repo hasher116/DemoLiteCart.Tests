@@ -4,11 +4,11 @@ namespace DemoLiteCart.Tests.Pages
 {
     internal class MainPage
     {
-        private IWebDriver driver;
-        private By locatorLoginField = By.Id("user-name");
-        private By locatorPasswordField = By.Id("password");
-        private By locatorButtonLogin = By.Id("login-button");
-        private By locatorErrorMessage = By.XPath("//div[@class = 'error-message-container error']");
+        private readonly IWebDriver driver;
+        private readonly By locatorLoginField = By.Id("user-name");
+        private readonly By locatorPasswordField = By.Id("password");
+        private readonly By locatorButtonLogin = By.Id("login-button");
+        private readonly By locatorErrorMessage = By.XPath("//div[@class = 'error-message-container error']");
 
         public MainPage(IWebDriver driver)
         {
