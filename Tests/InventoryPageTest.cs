@@ -1,8 +1,9 @@
-﻿using DemoLiteCart.Tests.Bases;
-using DemoLiteCart.Tests.Pages;
+﻿using DemoLiteCart.nUnitTests.Pages;
+using DemoLiteCart.nUnitTests.Bases;
 using FluentAssertions;
+using NUnit.Framework;
 
-namespace DemoLiteCart.Tests.Tests
+namespace DemoLiteCart.nUnitTests.Tests
 {
     [TestFixture]
     internal class InventoryPageTest : Base

@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace DemoLiteCart.Tests.Pages
+namespace DemoLiteCart.nUnitTests.Pages
 {
     internal class MainPage
     {

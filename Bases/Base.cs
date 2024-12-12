@@ -1,7 +1,8 @@
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace DemoLiteCart.Tests.Bases
+namespace DemoLiteCart.nUnitTests.Bases
 {
     public class Base
     {

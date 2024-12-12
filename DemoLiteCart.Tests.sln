@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLiteCart.Tests", "DemoLiteCart.Tests.csproj", "{94741E29-1D40-4E2E-840E-28713F5978F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoLiteCart.nUnitTests", "DemoLiteCart.nUnitTests.csproj", "{94741E29-1D40-4E2E-840E-28713F5978F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoLiteCart.MSTests", "..\DemoLiteCart.MSTests\DemoLiteCart.MSTests.csproj", "{78922C24-A0B8-429A-B69C-D884637B3F88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoLiteCart.xUnitTests", "..\DemoLiteCart.xUnitTests\DemoLiteCart.xUnitTests.csproj", "{D1CFA33D-0458-41B8-9C5A-AF26CF3B7EF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{94741E29-1D40-4E2E-840E-28713F5978F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94741E29-1D40-4E2E-840E-28713F5978F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94741E29-1D40-4E2E-840E-28713F5978F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78922C24-A0B8-429A-B69C-D884637B3F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78922C24-A0B8-429A-B69C-D884637B3F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78922C24-A0B8-429A-B69C-D884637B3F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78922C24-A0B8-429A-B69C-D884637B3F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1CFA33D-0458-41B8-9C5A-AF26CF3B7EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1CFA33D-0458-41B8-9C5A-AF26CF3B7EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1CFA33D-0458-41B8-9C5A-AF26CF3B7EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1CFA33D-0458-41B8-9C5A-AF26CF3B7EF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
